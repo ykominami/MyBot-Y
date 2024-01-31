@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@google/clasp": "^2.4.2",
-    "@types/google-apps-script": "^1.0.78",
+    "@types/google-apps-script": "^1.0.79",
     "@types/node": "^20.11.10",
     "cpx": "^1.5.0",
     "gas-webpack-plugin": "^2.5.0",
