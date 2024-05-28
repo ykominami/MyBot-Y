@@ -1,10 +1,12 @@
-import { sampleFunc } from 'sample_module';
+import { doGet, doPost, getData, testData, testData2, testData3 } from "./Code";
 
-// embed imported module function
-(global as any).func1 = sampleFunc;
-
-// embed arrow function
-(global as any).func2 = (): void => {
-  const msg: string = 'hello hello !!';
-  console.log(msg);
+declare const global: {
+  [x: string]: unknown;
 };
+
+global.testData3 = testData3;
+global.testData2 = testData2;
+global.testData = testData;
+global.doGet = doGet;
+global.doPost = doPost;
+global.getData = getData;
